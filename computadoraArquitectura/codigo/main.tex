@@ -1,0 +1,51 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{newtxtext,newtxmath}
+\usepackage{amsmath}
+\usepackage[letterpaper, margin=2.54cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr}
+\usepackage[table]{xcolor}
+\usepackage{array}
+\usepackage[style=ieee]{biblatex}
+\usepackage{float}
+\addbibresource{srcs.bib}
+\pagestyle{fancy}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+
+\title{Proyecto 1.\\Computadora de Desarrollo Mobile.}
+
+\author{
+    \IEEEauthorblockN{Angel Navas, Jose Natera}
+    \IEEEauthorblockA{\textit{Departamento de Computación, Universidad de Carabobo}}
+    \IEEEauthorblockA{Materia: Arquitectura del Computador \\
+    Profesor: Jose Canache}
+}
+
+\maketitle
+
+\begin{abstract}
+
+Se propone el diseño de una computadora especializada para el desarrollo de aplicaciones móviles. Se prioriza la selección de \textit{hardware} que ofrezca un equilibrio entre desempeño, eficiencia y costo, con el objetivo de garantizar una arquitectura capaz de soportar cargas de trabajo exigentes propias del desarrollo \textit{mobile} aprovechando al máximo las cotas del presupuesto.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+Computer Architecture; Mobile Development; Hardware Components; Workstation Build; Performance; Cost Efficiency.
+\end{IEEEkeywords}
+
+\section{Introducción}
+
+Este proyecto surge con el objetivo de diseñar una computadora optimizada para un nicho de uso específico, aprovechando al máximo un presupuesto total de 3000\$. Tras analizar distintas áreas de aplicación, se optó por enfocar el diseño en el desarrollo de aplicaciones móviles. En consecuencia, la mayor parte del presupuesto se destinó a componentes que ofrecieran una alta capacidad de memoria y un elevado rendimiento de procesamiento. Esta decisión se fundamenta en las exigencias propias de este ámbito, donde el uso intensivo de entornos de desarrollo, emuladores y herramientas de depuración demanda un \textit{hardware} capaz de sostener sesiones de elevadas de trabajo de manera eficiente y estable en el tiempo.
+
+\input{Hardware}
+\newpage
+\input{Presupuesto}
+\include{Apendice}
+\onecolumn
+\printbibliography
+
+
+\end{document}
