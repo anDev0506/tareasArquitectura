@@ -22,7 +22,7 @@
 	########################
 	bbsi:
 	addi $sp, $sp, -12   # Reserva espacio en la pila
-	sw $a1, 12($sp)      # Guarda n
+	sw $a1, 8($sp)       # Guarda n
 	sw $a2, 4($sp)       # Guarda i
 	sw $a3, 0($sp)       # Guarda j
 	
@@ -63,7 +63,7 @@
 	end:
 	lw $a3, 0($sp)       # Restaurar j
 	lw $a2, 4($sp)       # Restaurar i
-	lw $a1, 12($sp)      # Restaurar n
+	lw $a1, 8($sp)       # Restaurar n
 	addi $sp, $sp, 12    # Liberar pila
 	jr $ra               # Retorna
 

@@ -156,8 +156,7 @@
 	# Imprime el arreglo
 	########################
 	prnt:
-	addi $sp, $sp, -8    # Reserva espacio en pila
-	sw $ra, 4($sp)       # Guarda $ra
+	addi $sp, $sp, -4    # Reserva espacio en pila
 	sw $a0, 0($sp)       # Guarda dirección del arreglo
 	
 	li $t0, 0            # i = 0
@@ -173,6 +172,5 @@
 	addi $t0, $t0, 1     # i++
 	blt $t0, $a1, while  # Mientras i < n
 	
-	lw $ra, 4($sp)       # Restaurar $ra
-	addi $sp, $sp, 8     # Liberar pila
+	addi $sp, $sp, 4     # Liberar pila
 	jr $ra               # Retorna
